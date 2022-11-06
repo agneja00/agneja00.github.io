@@ -46,7 +46,7 @@
 .header_hero-layout {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+
 }
 
 .header_hero-soon {
@@ -71,8 +71,24 @@
 }
 
 .header_hero-image {
-    
+    position: relative;
+    z-index: 1;
 }
 
-
-
+.header_hero-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 150%;
+    border: 2px solid;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, #FF3998, #FF3939, #FF8139) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    width: 190px;
+    padding: 20px;
+    text-align: center;
+}
