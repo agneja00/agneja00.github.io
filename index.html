@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header_wrapper">
         <header class="header">
@@ -25,7 +31,11 @@
                 </div>
 
                 <div class="header_menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
                 </div>
 
                 <ul class="header_list">
@@ -35,21 +45,21 @@
                     <li class="header_list-item"><a class="header_list-link" href="#">Sign Up</a></li>
                 </ul>
             </nav>
-            
+
             <div class="header_hero">
                 <div class="header_hero-layout">
                     <p class="header_hero-soon">
                         LAUNCHING SOON
                     </p>
                     <span class="header_hero-title">
-                        <strong>An NFT like no other</strong>
+                        <b>An NFT like no other</b>
                     </span>
                     <p class="header_hero-paragraph">
                         Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
                     </p>
 
                     <a class="header_hero-button" href="/Sign">Sign Up</a>
-                    
+
                     <picture>
                         <source srcset="/graphic.svg" type="image/svg" media="(min-width: 700px)">
                         <img class="header_hero-image" src="/graphic.png" alt="pink">
@@ -57,11 +67,31 @@
                 </div>
             </div>
         </header>
-        <main>
-            <article class="upsell">
-                <span>Free NFT for early birds</span>
-                <p>Sign up today and you’ll get a free NFT when we launch.</p>
-            </article>
-        </main>
-    </body>
+    </div>
+    <main class="main">
+        <article class="main_upsell">
+            <div class="main_wrapper">
+                <span class="main_title">Free NFT for early birds</span>
+                <p class="main_paragraph">Sign up today and you’ll get a free NFT when we launch.</p>
+            </div>
+        </article>
+
+        <article class="main_companies">
+            <div class="main_companies-layout">
+                <div class="main_companies-left">
+                    <img class="main_companies-logo" src="/Vector.svg" alt="Boomerang"><span class="main_companies-logo-text">Boom</span>
+                    <img class="main_companies-logo main_companies-logo--none" src="/1.svg" alt="Boomerang">
+                    <img class="main_companies-logo" src="/2.svg" alt="Boomerang">
+                </div>
+                
+                <div class="main_companies-right">
+                    <img class="main_companies-logo" src="/3.svg" alt="Boomerang">
+                    <img class="main_companies-logo main_companies-logo--none" src="/4.svg" alt="Boomerang">
+                    <img class="main_companies-logo" src="/5.svg" alt="Boomerang">
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
 </html>
