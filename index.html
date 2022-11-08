@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <div class="header_wrapper">
-        <header class="header">
+    <header class="header">
+        <div class="header_wrapper">
             <nav class="header_navigation">
                 <div class="header_logo">
                     <a class="header_logo-link" href="/home">
@@ -45,29 +45,30 @@
                     <li class="header_list-item"><a class="header_list-link" href="#">Sign Up</a></li>
                 </ul>
             </nav>
+        </div>
 
-            <div class="header_hero">
-                <div class="header_hero-layout">
-                    <p class="header_hero-soon">
-                        LAUNCHING SOON
-                    </p>
-                    <span class="header_hero-title">
-                        <b>An NFT like no other</b>
-                    </span>
-                    <p class="header_hero-paragraph">
-                        Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
-                    </p>
+        <div class="header_hero">
+            <div class="header_hero-layout">
+                <p class="header_hero-soon">
+                    LAUNCHING SOON
+                </p>
+                <span class="header_hero-title">
+                    <b>An NFT like no other</b>
+                </span>
+                <p class="header_hero-paragraph">
+                    Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
+                </p>
 
-                    <a class="header_hero-button" href="/Sign">Sign Up</a>
+                <a class="header_hero-button" href="/Sign">Sign Up</a>
 
-                    <picture>
-                        <source srcset="/graphic.svg" type="image/svg" media="(min-width: 700px)">
-                        <img class="header_hero-image" src="/graphic.png" alt="pink">
-                    </picture>
-                </div>
+                <picture>
+                    <source srcset="/graphic.svg" type="image/svg" media="(min-width: 700px)">
+                    <img class="header_hero-image" src="/graphic.png" alt="pink">
+                </picture>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
+
     <main class="main">
         <article class="main_upsell">
             <div class="main_wrapper">
@@ -76,18 +77,96 @@
             </div>
         </article>
 
-        <article class="main_companies">
-            <div class="main_companies-layout">
-                <div class="main_companies-left">
-                    <img class="main_companies-logo" src="/Vector.svg" alt="Boomerang"><span class="main_companies-logo-text">Boom</span>
+        <div class="main_companies-layout">
+            <article class="main_companies">
+                <div class="main_companies-row-first">
+                    <div class="main_companies-logo-layout">
+                        <img class="main_companies-logo" src="/Vector.svg" alt="Boomerang">
+                        <span class="main_companies-logo-text">Boom</span>
+                    </div>
+
                     <img class="main_companies-logo main_companies-logo--none" src="/1.svg" alt="Boomerang">
                     <img class="main_companies-logo" src="/2.svg" alt="Boomerang">
                 </div>
-                
-                <div class="main_companies-right">
+                <div class="main_companies-row-second">
                     <img class="main_companies-logo" src="/3.svg" alt="Boomerang">
                     <img class="main_companies-logo main_companies-logo--none" src="/4.svg" alt="Boomerang">
                     <img class="main_companies-logo" src="/5.svg" alt="Boomerang">
+                </div>
+            </article>
+        </div>
+
+        <article class="main_showcase">
+            <div class="main_showcase-layout">
+                <span class="main_showcase-title">LE Super Rare Auction</span>
+                <p class="main_showcase-paragraph">We have released four limited edition NFTs early which can be bid on
+                    via <a class="main_showcase-paragraph-link" href="/Opensea">OpenSea.</a>
+                </p>
+                <div class="main_showcase-cards">
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-1.svg" alt="nft1">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-right-first">Purple Man</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--grey">top bid</p>
+                                <span class="main_showcase-card-text-right-first"><img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal"> 2.99 ETH</span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/nft-2.svg" alt="nft2">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Beige</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--grey">top bid</p>
+                                <span class="main_showcase-card-text-right-first"><img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal"> 2.99 ETH</span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-3.svg" alt="nft3">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Red Man</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--grey">top bid</p>
+                                <span class="main_showcase-card-text-right-first"><img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal"> 2.99 ETH</span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-4.svg" alt="nft4">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Green</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--grey">top bid</p>
+                                <span class="main_showcase-card-text-right-first"><img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal">2.99 ETH</span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
