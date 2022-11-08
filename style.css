@@ -2,13 +2,18 @@
     box-sizing: border-box;
 }
 
-html {
-    position: relative;
+html,
+body {
+    min-height: 100vh;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
+}
+
+.header {
+    position: relative;
 }
 
 .header_wrapper {
@@ -20,14 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-}
-
-.header_logo-link {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
 }
 
 .header_logo-title {
@@ -48,44 +45,47 @@ body {
     display: none;
 }
 
-.header_hero {
-    width: 364px;
-}
-
-.header_hero-layout {
+.main_article-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 32px;
+    margin: 32px;
+    padding-right: 58px;
+    padding-bottom: 50px;
 }
 
-.header_hero-soon {
+.main_article-soon {
     color: #FF3998;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
 
-.header_hero-title {
-    font-size: 42px;
+.main_article-title {
+    font-size: 48px;
     line-height: 58px;
+    font-weight: 900;
 }
 
-.header_hero-paragraph,
+.main_article-paragraph,
 .main_showcase-paragraph,
 .main_showcase-paragraph-link {
     font-size: 20px;
-    font-weight: 400;
     line-height: 30px;
     color: #555555;
+    /* width: 274px; */
 }
 
-.header_hero-image {
+.main_showcase-paragraph-link {
+    font-weight: 500;
+}
+
+.main_article-image {
     position: absolute;
     top: 50px;
     right: 0;
 }
 
-.header_hero-button {
+.main_article-button {
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -124,19 +124,18 @@ body {
 
 .main_paragraph {
     font-size: 20px;
-    font-weight: 400;
     line-height: 30px;
 }
 
 .main_companies-layout {
     margin: 32px;
-    width: 320px;
 }
 
 .main_companies {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .main_companies-row-first,
@@ -146,18 +145,12 @@ body {
     justify-content: space-between;
 }
 
-.main_companies-logo-layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-}
-
 .main_companies-logo-text {
     font-size: 31px;
-    font-weight: 400;
     line-height: 36px;
     color: #999999;
+    display: flex;
+    gap: 10px;
 }
 
 .main_companies-logo {
@@ -222,7 +215,6 @@ body {
 
 .main_showcase-card-text-second {
     color: #777777;
-    font-weight: 400;
     font-size: 18px;
     line-height: 18px;
 }
