@@ -36,7 +36,8 @@
                     <li class="header_list-item"><a class="header_list-link" href="#">Features</a></li>
                     <li class="header_list-item"><a class="header_list-link" href="#">About</a></li>
                     <li class="header_list-item"><a class="header_list-link" href="#">Launch</a></li>
-                    <li class="header_list-item"><a class="header_list-link" href="#">Sign Up</a></li>
+                    <li class="header_list-item"><a class="header_list-link header_list-link--active" href="#">Sign
+                            Up</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,19 +46,21 @@
     <main class="main">
         <article class="main_article">
             <div class="main_article-wrapper">
-                <p class="main_article-soon">
-                    LAUNCHING SOON
-                </p>
-                <span class="main_article-title">
-                    An NFT like no other
-                </span>
-                <p class="main_article-paragraph">
-                    Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
-                </p>
-
-                <a class="main_article-button" href="/Sign">Sign Up</a>
-
-                <img class="main_article-image" src="/graphic.svg" alt="pink">
+                <div class="main_article-left">
+                    <p class="main_article-soon">
+                        LAUNCHING SOON
+                    </p>
+                    <span class="main_article-title">
+                        An NFT like no other
+                    </span>
+                    <p class="main_article-paragraph">
+                        Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
+                    </p>
+                    <a class="main_article-button" href="/Sign">Sign Up</a>
+                </div>
+                <div class="main_article-right">
+                    <img class="main_article-image" src="/graphic.svg" alt="pink">
+                </div>
             </div>
         </article>
 
@@ -71,8 +74,8 @@
         <article class="main_companies">
             <div class="main_companies-layout">
                 <div class="main_companies-row-first">
-                    <span class="main_companies-logo-text">
-                        <img class="main_companies-logo" src="/Vector.svg"alt="Boom">
+                    <span class="main_companies-logo-text main_companies-logo-text--none">
+                        <img class="main_companies-logo" src="/Vector.svg" alt="Boom">
                         Boom
                     </span>
                     <img class="main_companies-logo main_companies-logo--none" src="/1.svg" alt="Boomerang">
@@ -192,14 +195,16 @@
 <footer class="footer">
     <div class="footer_wrapper">
         <article class="footer_top">
-            <img class="footer_logo" src="/logo.svg" alt="logo">
-            <p class="footer_paragraph">Exclusive NFT Collection</p>
-            <div class="footer_links">
-                <a class="footer_links-item" href="/Facebook"><img src="/facebook.svg" alt="Facebook"></a>
-                <a class="footer_links-item" href="/Twitter"><img src="/twitter.svg" alt="Twitter"></a>
-                <a class="footer_links-item" href="/Instagram"><img src="/Instagram.svg" alt="Instagram"></a>
-                <a class="footer_links-item" href="/Tiktok"><img src="/tiktok.svg" alt="Tiktok"></a>
-            </div>
+            <article class="footer_top-first">
+                <img class="footer_logo" src="/logo.svg" alt="logo">
+                <p class="footer_paragraph">Exclusive NFT Collection</p>
+                <div class="footer_links">
+                    <a class="footer_links-item" href="/Facebook"><img src="/facebook.svg" alt="Facebook"></a>
+                    <a class="footer_links-item" href="/Twitter"><img src="/twitter.svg" alt="Twitter"></a>
+                    <a class="footer_links-item" href="/Instagram"><img src="/Instagram.svg" alt="Instagram"></a>
+                    <a class="footer_links-item" href="/Tiktok"><img src="/tiktok.svg" alt="Tiktok"></a>
+                </div>
+            </article>
 
             <nav class="footer_navigation">
                 <div class="footer_first-row">
@@ -233,13 +238,19 @@
                 </div>
             </nav>
         </article>
+    </div>
 
-        <article class="footer_bottom">
+    <article class="footer_bottom">
+        <div class="footer_bottom-wrapper">
             <p class="footer_bottom-text">
                 © Copyright 2022 NFTlanding
             </p>
-        </article>
-    </div>
+
+            <p class="footer_bottom-text footer_bottom-text--none">
+                Launching August 2022
+            </p>
+        </div>
+    </article>
 </footer>
 
 </html>
