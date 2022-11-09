@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-.header {
+.main {
     position: relative;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .main_article-paragraph {
-    max-width: 274px;
+    width: 274px;
 }
 
 .main_showcase-paragraph-link {
@@ -86,9 +86,10 @@ body {
 }
 
 .main_article-image {
+    height: 519px;
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: -80px;
+    left: 40%;
 }
 
 .main_article-button,
