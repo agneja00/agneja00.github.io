@@ -1,15 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML/CSS Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        Hello World
+    <header class="header">
+        <div class="header_wrapper">
+            <nav class="header_navigation">
+                <a class="header_logo-link" href="/home">
+                    <img src="/logo.svg" alt="logo">
+                </a>
+
+                <div class="header_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </div>
+
+                <ul class="header_list">
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="#">Features</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="#">About</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="#">Launch</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link header_list-link--active" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main class="main">
+        <article class="main_article">
+            <div class="main_article-wrapper">
+                <div class="main_article-left">
+                    <p class="main_article-soon">
+                        LAUNCHING SOON
+                    </p>
+                    <span class="main_article-title">
+                        An NFT like no other
+                    </span>
+                    <p class="main_article-paragraph">
+                        Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.
+                    </p>
+                    <a class="main_article-button" href="/Sign">Sign Up</a>
+                </div>
+                <div class="main_article-right">
+                    <img class="main_article-image" src="/graphic.svg" alt="pink">
+                </div>
+            </div>
+        </article>
+
+        <article class="main_upsell">
+            <div class="main_wrapper">
+                <span class="main_title">Free NFT for early birds</span>
+                <p class="main_paragraph">Sign up today and you’ll get a free NFT when we launch.</p>
+            </div>
+        </article>
+
+        <div class="main_companies-wrapper">
+            <article class="main_companies">
+                <div class="main_companies-row-first">
+                    <span class="main_companies-logo-text main_companies-logo-text--none">
+                        <img class="main_companies-logo main_companies-logo--other" src="/Vector.svg" alt="Boom">
+                        Boom
+                    </span>
+                    <img class="main_companies-logo main_companies-logo--none" src="/1.svg" alt="Boomerang">
+                    <img class="main_companies-logo" src="/2.svg" alt="Blimp">
+                </div>
+
+                <div class="main_companies-row-second">
+                    <img class="main_companies-logo" src="/3.svg" alt="qrco">
+                    <img class="main_companies-logo main_companies-logo--none" src="/4.svg" alt="Opendoor">
+                    <img class="main_companies-logo" src="/5.svg" alt="Droplet">
+                </div>
+            </article>
+        </div>
+
+        <article class="main_article">
+            <div class="main_article-wrapper">
+                <span class="main_showcase-title">LE Super Rare Auction</span>
+                <p class="main_showcase-paragraph">
+                    We have released four limited edition NFTs early which can be bid on via 
+                    <a class="main_showcase-paragraph-link" href="/Opensea">OpenSea.</a>
+                </p>
+                <div class="main_showcase-cards">
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-1.svg" alt="nft1">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-right-first">Purple Man</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--gray">top bid</p>
+                                <span class="main_showcase-card-text-right-first">
+                                    <img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal">
+                                    2.99 ETH
+                                </span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/nft-2.svg" alt="nft2">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Beige</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--gray">top bid</p>
+                                <span class="main_showcase-card-text-right-first">
+                                    <img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal">
+                                    2.99 ETH
+                                </span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-3.svg" alt="nft3">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Red Man</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--gray">top bid</p>
+                                <span class="main_showcase-card-text-right-first">
+                                    <img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal">
+                                    2.99 ETH
+                                </span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_showcase-card">
+                        <img class="main_showcase-card-image" src="/ntf-4.svg" alt="nft4">
+                        <div class="main_showcase-card-text">
+                            <div class="main_showcase-card-text-left">
+                                <p class="main_showcase-card-text-title">gloop series</p>
+                                <span class="main_showcase-card-text-left-first">Green</span>
+                                <p class="main_showcase-card-text-second">#12983</p>
+                            </div>
+
+                            <div class="main_showcase-card-text-right">
+                                <p class="main_showcase-card-text-title main_showcase-card-text-title--gray">top bid</p>
+                                <span class="main_showcase-card-text-right-first">
+                                    <img class="main_showcase-card-text-first-image" src="/eth.svg" alt="crystal">
+                                    2.99 ETH
+                                </span>
+                                <p class="main_showcase-card-text-second">1 day left</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="main_article-last">
+            <div class="main_article-last-wrapper">
+                <p class="main_article-last-soon">
+                    LAUNCHING SOON
+                </p>
+                <span class="main_article-last-title">
+                    An NFT like no other
+                </span>
+                <p class="main_article-last-paragraph">
+                    Don’t miss out on the release of our new NFT. Sign up below to receive updates.
+                </p>
+
+                <a class="main_article-last-button" href="/Sign">Sign Up</a>
+
+                <img class="main_article-last-image" src="/upsell-footer-image.svg" alt="green">
+            </div>
+        </article>
+    </main>
 </body>
+<footer class="footer">
+    <div class="footer_wrapper">
+        <article class="footer_top">
+            <article class="footer_top-first">
+                <img class="footer_logo" src="/logo.svg" alt="logo">
+                <p class="footer_paragraph">
+                    Exclusive NFT Collection
+                </p>
+                <div class="footer_links">
+                    <a class="footer_links-item" href="/Facebook">
+                        <img src="/facebook.svg" alt="Facebook">
+                    </a>
+                    <a class="footer_links-item" href="/Twitter">
+                        <img src="/twitter.svg" alt="Twitter">
+                    </a>
+                    <a class="footer_links-item" href="/Instagram">
+                        <img src="/Instagram.svg" alt="Instagram">
+                    </a>
+                    <a class="footer_links-item" href="/Tiktok">
+                        <img src="/tiktok.svg" alt="Tiktok">
+                    </a>
+                </div>
+            </article>
+
+            <nav class="footer_navigation">
+                <div class="footer_first-row">
+                    <ul class="footer_list">
+                        <span class="footer_list-title">ABOUT</span>
+                        <li class="footer_list-item">About</li>
+                        <li class="footer_list-item">Terms</li>
+                        <li class="footer_list-item">Legal</li>
+                    </ul>
+
+                    <ul class="footer_list">
+                        <span class="footer_list-title">NFT</span>
+                        <li class="footer_list-item">OpenSea</li>
+                        <li class="footer_list-item">Maker</li>
+                        <li class="footer_list-item">Learn</li>
+                    </ul>
+                </div>
+
+                <div class="footer_second-row">
+                    <ul class="footer_list">
+                        <span class="footer_list-title">CONTACT</span>
+                        <li class="footer_list-item">Press</li>
+                        <li class="footer_list-item">Support</li>
+                    </ul>
+
+                    <ul class="footer_list">
+                        <span class="footer_list-title">SOCIAL</span>
+                        <li class="footer_list-item">Twitter</li>
+                        <li class="footer_list-item">Instagram</li>
+                    </ul>
+                </div>
+            </nav>
+        </article>
+    </div>
+
+    <article class="footer_bottom">
+        <div class="footer_bottom-wrapper">
+            <p class="footer_bottom-text">
+                © Copyright 2022 NFTlanding
+            </p>
+
+            <p class="footer_bottom-text footer_bottom-text--none">
+                Launching August 2022
+            </p>
+        </div>
+    </article>
+</footer>
 </html>
