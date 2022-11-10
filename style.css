@@ -4,7 +4,7 @@
 
 html,
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
 
 .main {
     position: relative;
+    overflow: hidden;
 }
 
 .header_wrapper {
@@ -24,7 +25,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
 }
 
 .header_logo-title {
@@ -65,7 +65,6 @@ body {
     font-size: 48px;
     line-height: 58px;
     font-weight: 900;
-    max-width: 274px;
 }
 
 .main_article-right,
@@ -93,10 +92,10 @@ body {
 }
 
 .main_article-image {
-    height: 519px;
+    width: 400px;
     position: absolute;
-    top: -80px;
-    left: 40%;
+    top: -50px;
+    left: 50%;
 }
 
 .main_article-button,
@@ -161,7 +160,7 @@ body {
 }
 
 .main_companies-logo {
-    height: 46px;
+    width: 154px;
 }
 
 .main_companies-logo-text {
@@ -170,6 +169,15 @@ body {
     color: #999999;
     display: flex;
     gap: 10px;
+    
+}
+
+.main_companies-logo--width {
+   
+}
+
+.main_companies-logo--other {
+    width: 40px;
 }
 
 .main_companies-logo--none {
@@ -193,6 +201,10 @@ body {
     border-radius: 16px;
 }
 
+.main_showcase-card-text-first-image {
+    height: 22px;
+}
+
 .main_showcase-card-text {
     display: flex;
 }
@@ -202,8 +214,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 24px;
     flex: 1;
-    margin: 24px;
 }
 
 .main_showcase-card-text-right {
@@ -401,8 +413,7 @@ body {
     }
 
     .main_article-image {
-        top: 0;
-        left: 58%;
+        width: 600px;
     }
 
     .main_upsell {
